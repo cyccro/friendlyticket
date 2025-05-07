@@ -11,7 +11,7 @@ export function FtcksButtonTransparent({
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
   }) {
-  return <Button className="bg-transparent text-primary hover:bg-transparent hover:shadow-md shadow-primary shadow-none hover:cursor-pointer duration-150 transition" {...props}></Button>
+  return <Button className={"bg-transparent text-primary hover:bg-transparent hover:shadow-sm hover:shadow-primary shadow-none cursor-pointer duration-150 " + className} {...props}></Button>
 }
 /**
  * Default colored Friendly Tickets button
